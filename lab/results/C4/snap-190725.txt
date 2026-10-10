@@ -1,0 +1,20 @@
+# snapshot 2026-10-10 19:07:25
+## T1
+# /webapp/webapp9mf02/logs が Stale: ls: cannot access '/webapp/webapp9mf02/logs/': Stale file handle
+VERDICT=MOUNTSTALE host=task-1 pid=21 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T2
+# /webapp/webapp9mf02/logs が Stale: ls: cannot access '/webapp/webapp9mf02/logs/': Stale file handle
+VERDICT=MOUNTSTALE host=task-2 pid=22 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T3
+# /webapp/webapp9mf02/logs が Stale: ls: cannot access '/webapp/webapp9mf02/logs/': Stale file handle
+VERDICT=MOUNTSTALE host=task-3 pid=21 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T4
+# /webapp/webapp9mf02/logs が Stale: ls: cannot access '/webapp/webapp9mf02/logs/': Stale file handle
+VERDICT=MOUNTSTALE host=task-4 pid=21 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T5
+# /webapp/webapp9mf02/logs が Stale: ls: cannot access '/webapp/webapp9mf02/logs/': Stale file handle
+VERDICT=MOUNTSTALE host=task-5 pid=21 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T6
+# /webapp/webapp9mf02/logs が Stale: ls: cannot access '/webapp/webapp9mf02/logs/': Stale file handle
+VERDICT=MOUNTSTALE host=task-6 pid=20 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## SERVER

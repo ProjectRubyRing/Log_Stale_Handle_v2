@@ -1,0 +1,20 @@
+# snapshot 2026-10-10 17:11:25
+## T1
+VERDICT=CURRENT host=unknown pid=29 fd=6 fd_inode=203665 cur_inode=203665 nlink=1 name=tracelog
+## T2
+VERDICT=CURRENT host=unknown pid=28 fd=6 fd_inode=203660 cur_inode=203660 nlink=1 name=tracelog
+## T3
+VERDICT=CURRENT host=unknown pid=28 fd=6 fd_inode=203664 cur_inode=203664 nlink=1 name=tracelog
+## T4
+VERDICT=CURRENT host=unknown pid=28 fd=6 fd_inode=203662 cur_inode=203662 nlink=1 name=tracelog
+## T5
+VERDICT=CURRENT host=unknown pid=28 fd=6 fd_inode=203663 cur_inode=203663 nlink=1 name=tracelog
+## T6
+VERDICT=CURRENT host=unknown pid=28 fd=6 fd_inode=203661 cur_inode=203661 nlink=1 name=tracelog
+## SERVER
+203570 2 4096 1791619860 T1
+203574 2 4096 1791619860 T2
+203578 2 4096 1791619860 T3
+203582 2 4096 1791619860 T4
+203586 2 4096 1791619860 T5
+203590 2 4096 1791619860 T6

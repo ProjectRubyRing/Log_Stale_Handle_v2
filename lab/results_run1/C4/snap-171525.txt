@@ -1,0 +1,21 @@
+# snapshot 2026-10-10 17:15:25
+## T1
+# /webapp/webapp9mf02/logs をたどれない: 
+VERDICT=NOFD host=unknown pid=20 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T2
+# /webapp/webapp9mf02/logs をたどれない: 
+VERDICT=NOFD host=unknown pid=20 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T3
+# /webapp/webapp9mf02/logs をたどれない: 
+VERDICT=NOFD host=unknown pid=20 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T4
+# /webapp/webapp9mf02/logs をたどれない: 
+VERDICT=NOFD host=unknown pid=19 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T5
+# /webapp/webapp9mf02/logs をたどれない: 
+VERDICT=NOFD host=unknown pid=20 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## T6
+# /webapp/webapp9mf02/logs をたどれない: 
+VERDICT=NOFD host=unknown pid=19 fd=- fd_inode=- cur_inode=- nlink=- name=-
+## SERVER
+stat: cannot statx '*': No such file or directory

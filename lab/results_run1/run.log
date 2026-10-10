@@ -1,0 +1,25 @@
+[17:03:39] イメージを作る
+[17:04:05] === C1: いまの構成（6 タスクが同じ tracelog）（NFSv3・6 タスク・250 秒）
+[17:05:26] スナップショット 17:05:26
+[17:06:25] スナップショット 17:06:25
+[17:07:25] スナップショット 17:07:25
+[17:08:25] スナップショット 17:08:25
+[17:08:41] 収集した: /c/Users/taka_/Claude/Log_Stale_Handle_v2/lab/results/C1
+[17:08:42] === C3: 恒久対策（リンク先をタスクごとのディレクトリに）（NFSv3・6 タスク・190 秒）
+lrwxrwxrwx 1 root root 33 Oct 10 08:08 /webapp/webapp9mf02/logs -> /mnt/logs/front/inter-api/logs/T1
+lrwxrwxrwx 1 root root 33 Oct 10 08:08 /webapp/webapp9mf02/logs -> /mnt/logs/front/inter-api/logs/T2
+lrwxrwxrwx 1 root root 33 Oct 10 08:08 /webapp/webapp9mf02/logs -> /mnt/logs/front/inter-api/logs/T3
+lrwxrwxrwx 1 root root 33 Oct 10 08:08 /webapp/webapp9mf02/logs -> /mnt/logs/front/inter-api/logs/T4
+lrwxrwxrwx 1 root root 33 Oct 10 08:08 /webapp/webapp9mf02/logs -> /mnt/logs/front/inter-api/logs/T5
+lrwxrwxrwx 1 root root 33 Oct 10 08:08 /webapp/webapp9mf02/logs -> /mnt/logs/front/inter-api/logs/T6
+[17:10:25] スナップショット 17:10:25
+[17:11:25] スナップショット 17:11:25
+[17:12:25] スナップショット 17:12:25
+[17:12:41] 収集した: /c/Users/taka_/Claude/Log_Stale_Handle_v2/lab/results/C3
+[17:12:41] === C4: 仮説 1（動いている最中にファイルシステムを作り直す）（NFSv3・6 タスク・130 秒）
+[17:14:15] 割り込み: recreate_fs
+[17:15:25] スナップショット 17:15:25
+[17:15:40] 収集した: /c/Users/taka_/Claude/Log_Stale_Handle_v2/lab/results/C4
+[17:15:40] === C2: いまの構成（6 タスクが同じ tracelog）（NFSv4.1・6 タスク・250 秒）
+mount: /mnt/logs: special device 172.31.0.10:/ does not exist.
+exit=32

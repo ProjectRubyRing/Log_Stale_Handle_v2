@@ -1,0 +1,8 @@
+id=C4
+nfs=3
+tasks=6
+duration=130
+start_epoch=1791626720
+desc=仮説 1（動いている最中にファイルシステムを作り直す）
+recreate_epoch=1791626795
+end_epoch=1791626861

@@ -1,0 +1,68 @@
+# snapshot 2026-10-10 19:12:25
+## T1
+VERDICT=CURRENT host=task-1 pid=23 fd=6 fd_inode=203735 cur_inode=203735 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T1 は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T2
+VERDICT=CURRENT host=task-2 pid=22 fd=6 fd_inode=203736 cur_inode=203736 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T2 は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T3
+VERDICT=CURRENT host=task-3 pid=21 fd=6 fd_inode=203740 cur_inode=203740 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T3 は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T4
+VERDICT=CURRENT host=task-4 pid=21 fd=6 fd_inode=203737 cur_inode=203737 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T4 は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T5
+VERDICT=CURRENT host=task-5 pid=22 fd=6 fd_inode=203741 cur_inode=203741 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T5 は 24 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T6
+VERDICT=CURRENT host=task-6 pid=22 fd=6 fd_inode=203738 cur_inode=203738 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T6 は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## SERVER
+203669 1 4300 1791627000 ./mid/T1/trace.log.2026-10-10-10-09
+203715 1 7047 1791627060 ./mid/T1/trace.log.2026-10-10-10-10
+203676 1 531 1791627001 ./mid/T1/server.log.2026-10-10-10-09
+203720 1 864 1791627061 ./mid/T1/server.log.2026-10-10-10-10
+203735 1 3016 1791627146 ./mid/T1/tracelog
+203730 1 864 1791627120 ./mid/T1/server.log.2026-10-10-10-11
+203729 1 7018 1791627120 ./mid/T1/trace.log.2026-10-10-10-11
+203742 1 396 1791627146 ./mid/T1/server.log
+203684 1 4416 1791627000 ./mid/T2/trace.log.2026-10-10-10-09
+203615 1 6844 1791627060 ./mid/T2/trace.log.2026-10-10-10-10
+203685 1 531 1791627000 ./mid/T2/server.log.2026-10-10-10-09
+203718 1 864 1791627061 ./mid/T2/server.log.2026-10-10-10-10
+203736 1 3045 1791627146 ./mid/T2/tracelog
+203731 1 864 1791627120 ./mid/T2/server.log.2026-10-10-10-11
+203727 1 7076 1791627120 ./mid/T2/trace.log.2026-10-10-10-11
+203744 1 396 1791627146 ./mid/T2/server.log
+203705 1 4271 1791627000 ./mid/T5/trace.log.2026-10-10-10-09
+203713 1 6960 1791627059 ./mid/T5/trace.log.2026-10-10-10-10
+203706 1 531 1791627002 ./mid/T5/server.log.2026-10-10-10-09
+203722 1 864 1791627061 ./mid/T5/server.log.2026-10-10-10-10
+203741 1 2929 1791627147 ./mid/T5/tracelog
+203733 1 864 1791627122 ./mid/T5/server.log.2026-10-10-10-11
+203723 1 6989 1791627120 ./mid/T5/trace.log.2026-10-10-10-11
+203746 1 360 1791627147 ./mid/T5/server.log
+203708 1 4068 1791627000 ./mid/T6/trace.log.2026-10-10-10-09
+203711 1 6960 1791627060 ./mid/T6/trace.log.2026-10-10-10-10
+203709 1 495 1791627000 ./mid/T6/server.log.2026-10-10-10-09
+203719 1 864 1791627061 ./mid/T6/server.log.2026-10-10-10-10
+203738 1 3248 1791627147 ./mid/T6/tracelog
+203732 1 828 1791627120 ./mid/T6/server.log.2026-10-10-10-11
+203728 1 6815 1791627120 ./mid/T6/trace.log.2026-10-10-10-11
+203739 1 432 1791627147 ./mid/T6/server.log
+203693 1 4474 1791627000 ./mid/T3/trace.log.2026-10-10-10-09
+203714 1 6989 1791627060 ./mid/T3/trace.log.2026-10-10-10-10
+203694 1 531 1791627000 ./mid/T3/server.log.2026-10-10-10-09
+203717 1 864 1791627060 ./mid/T3/server.log.2026-10-10-10-10
+203740 1 3045 1791627146 ./mid/T3/tracelog
+203726 1 900 1791627120 ./mid/T3/server.log.2026-10-10-10-11
+203725 1 7192 1791627120 ./mid/T3/trace.log.2026-10-10-10-11
+203745 1 396 1791627146 ./mid/T3/server.log
+203702 1 4271 1791627000 ./mid/T4/trace.log.2026-10-10-10-09
+203712 1 6960 1791627060 ./mid/T4/trace.log.2026-10-10-10-10
+203703 1 531 1791627002 ./mid/T4/server.log.2026-10-10-10-09
+203721 1 864 1791627062 ./mid/T4/server.log.2026-10-10-10-10
+203737 1 3074 1791627146 ./mid/T4/tracelog
+203734 1 828 1791627120 ./mid/T4/server.log.2026-10-10-10-11
+203724 1 6873 1791627120 ./mid/T4/trace.log.2026-10-10-10-11
+203743 1 396 1791627146 ./mid/T4/server.log

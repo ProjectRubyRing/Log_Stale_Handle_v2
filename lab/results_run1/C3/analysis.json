@@ -1,0 +1,790 @@
+{
+ "meta": {
+  "id": "C3",
+  "nfs": "3",
+  "tasks": "6",
+  "duration": "190",
+  "start_epoch": "1791619760",
+  "desc": "恒久対策（リンク先をタスクごとのディレクトリに）",
+  "end_epoch": "1791619961"
+ },
+ "tasks": [
+  "T1",
+  "T2",
+  "T3",
+  "T4",
+  "T5",
+  "T6"
+ ],
+ "totals": {
+  "emitted": 4572,
+  "ok": 4572
+ },
+ "per_task": {
+  "T1": {
+   "emitted": 765,
+   "ok": 765
+  },
+  "T2": {
+   "emitted": 762,
+   "ok": 762
+  },
+  "T3": {
+   "emitted": 773,
+   "ok": 773
+  },
+  "T4": {
+   "emitted": 760,
+   "ok": 760
+  },
+  "T5": {
+   "emitted": 757,
+   "ok": 757
+  },
+  "T6": {
+   "emitted": 755,
+   "ok": 755
+  }
+ },
+ "per_minute": {
+  "2026-10-10-08-09": {
+   "T1": {
+    "emitted": 152,
+    "ok": 152
+   },
+   "T2": {
+    "emitted": 157,
+    "ok": 157
+   },
+   "T3": {
+    "emitted": 158,
+    "ok": 158
+   },
+   "T4": {
+    "emitted": 150,
+    "ok": 150
+   },
+   "T5": {
+    "emitted": 151,
+    "ok": 151
+   },
+   "T6": {
+    "emitted": 144,
+    "ok": 144
+   }
+  },
+  "2026-10-10-08-10": {
+   "T1": {
+    "emitted": 243,
+    "ok": 243
+   },
+   "T2": {
+    "emitted": 235,
+    "ok": 235
+   },
+   "T3": {
+    "emitted": 242,
+    "ok": 242
+   },
+   "T4": {
+    "emitted": 241,
+    "ok": 241
+   },
+   "T5": {
+    "emitted": 240,
+    "ok": 240
+   },
+   "T6": {
+    "emitted": 239,
+    "ok": 239
+   }
+  },
+  "2026-10-10-08-11": {
+   "T1": {
+    "emitted": 242,
+    "ok": 242
+   },
+   "T2": {
+    "emitted": 244,
+    "ok": 244
+   },
+   "T3": {
+    "emitted": 247,
+    "ok": 247
+   },
+   "T4": {
+    "emitted": 237,
+    "ok": 237
+   },
+   "T5": {
+    "emitted": 240,
+    "ok": 240
+   },
+   "T6": {
+    "emitted": 235,
+    "ok": 235
+   }
+  },
+  "2026-10-10-08-12": {
+   "T1": {
+    "emitted": 128,
+    "ok": 128
+   },
+   "T2": {
+    "emitted": 126,
+    "ok": 126
+   },
+   "T3": {
+    "emitted": 126,
+    "ok": 126
+   },
+   "T4": {
+    "emitted": 132,
+    "ok": 132
+   },
+   "T5": {
+    "emitted": 126,
+    "ok": 126
+   },
+   "T6": {
+    "emitted": 137,
+    "ok": 137
+   }
+  }
+ },
+ "server_log": {
+  "T1": {
+   "expected": 76,
+   "found": 76
+  },
+  "T2": {
+   "expected": 76,
+   "found": 76
+  },
+  "T3": {
+   "expected": 77,
+   "found": 77
+  },
+  "T4": {
+   "expected": 76,
+   "found": 76
+  },
+  "T5": {
+   "expected": 75,
+   "found": 75
+  },
+  "T6": {
+   "expected": 75,
+   "found": 75
+  }
+ },
+ "files": {
+  "logs/T1/trace.log.2026-10-10-08-09": {
+   "tasks": {
+    "T1": 152
+   },
+   "minutes": {
+    "2026-10-10-08-09": 152
+   },
+   "size": 4300,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T1/trace.log.2026-10-10-08-10": {
+   "tasks": {
+    "T1": 243
+   },
+   "minutes": {
+    "2026-10-10-08-10": 243
+   },
+   "size": 7047,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T1/trace.log.2026-10-10-08-11": {
+   "tasks": {
+    "T1": 242
+   },
+   "minutes": {
+    "2026-10-10-08-11": 242
+   },
+   "size": 7018,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T1/tracelog": {
+   "tasks": {
+    "T1": 128
+   },
+   "minutes": {
+    "2026-10-10-08-12": 128
+   },
+   "size": 3712,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T2/trace.log.2026-10-10-08-09": {
+   "tasks": {
+    "T2": 157
+   },
+   "minutes": {
+    "2026-10-10-08-09": 157
+   },
+   "size": 4445,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T2/trace.log.2026-10-10-08-10": {
+   "tasks": {
+    "T2": 235
+   },
+   "minutes": {
+    "2026-10-10-08-10": 235
+   },
+   "size": 6815,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T2/trace.log.2026-10-10-08-11": {
+   "tasks": {
+    "T2": 244
+   },
+   "minutes": {
+    "2026-10-10-08-11": 244
+   },
+   "size": 7076,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T2/tracelog": {
+   "tasks": {
+    "T2": 126
+   },
+   "minutes": {
+    "2026-10-10-08-12": 126
+   },
+   "size": 3654,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T3/trace.log.2026-10-10-08-09": {
+   "tasks": {
+    "T3": 158
+   },
+   "minutes": {
+    "2026-10-10-08-09": 158
+   },
+   "size": 4474,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T3/trace.log.2026-10-10-08-10": {
+   "tasks": {
+    "T3": 242
+   },
+   "minutes": {
+    "2026-10-10-08-10": 242
+   },
+   "size": 7018,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T3/trace.log.2026-10-10-08-11": {
+   "tasks": {
+    "T3": 247
+   },
+   "minutes": {
+    "2026-10-10-08-11": 247
+   },
+   "size": 7163,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T3/tracelog": {
+   "tasks": {
+    "T3": 126
+   },
+   "minutes": {
+    "2026-10-10-08-12": 126
+   },
+   "size": 3654,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T4/trace.log.2026-10-10-08-09": {
+   "tasks": {
+    "T4": 150
+   },
+   "minutes": {
+    "2026-10-10-08-09": 150
+   },
+   "size": 4242,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T4/trace.log.2026-10-10-08-10": {
+   "tasks": {
+    "T4": 241
+   },
+   "minutes": {
+    "2026-10-10-08-10": 241
+   },
+   "size": 6989,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T4/trace.log.2026-10-10-08-11": {
+   "tasks": {
+    "T4": 237
+   },
+   "minutes": {
+    "2026-10-10-08-11": 237
+   },
+   "size": 6873,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T4/tracelog": {
+   "tasks": {
+    "T4": 132
+   },
+   "minutes": {
+    "2026-10-10-08-12": 132
+   },
+   "size": 3828,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T5/trace.log.2026-10-10-08-09": {
+   "tasks": {
+    "T5": 151
+   },
+   "minutes": {
+    "2026-10-10-08-09": 151
+   },
+   "size": 4271,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T5/trace.log.2026-10-10-08-10": {
+   "tasks": {
+    "T5": 240
+   },
+   "minutes": {
+    "2026-10-10-08-10": 240
+   },
+   "size": 6960,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T5/trace.log.2026-10-10-08-11": {
+   "tasks": {
+    "T5": 240
+   },
+   "minutes": {
+    "2026-10-10-08-11": 240
+   },
+   "size": 6960,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T5/tracelog": {
+   "tasks": {
+    "T5": 126
+   },
+   "minutes": {
+    "2026-10-10-08-12": 126
+   },
+   "size": 3654,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T6/trace.log.2026-10-10-08-09": {
+   "tasks": {
+    "T6": 144
+   },
+   "minutes": {
+    "2026-10-10-08-09": 144
+   },
+   "size": 4068,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T6/trace.log.2026-10-10-08-10": {
+   "tasks": {
+    "T6": 239
+   },
+   "minutes": {
+    "2026-10-10-08-10": 239
+   },
+   "size": 6931,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T6/trace.log.2026-10-10-08-11": {
+   "tasks": {
+    "T6": 235
+   },
+   "minutes": {
+    "2026-10-10-08-11": 235
+   },
+   "size": 6815,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/T6/tracelog": {
+   "tasks": {
+    "T6": 137
+   },
+   "minutes": {
+    "2026-10-10-08-12": 137
+   },
+   "size": 3973,
+   "nul": 0,
+   "broken": 0
+  }
+ },
+ "broken_lines": {},
+ "nul_bytes": {},
+ "boundaries": [
+  {
+   "boundary_utc": "08:10:00",
+   "order": [
+    "T3",
+    "T4",
+    "T6",
+    "T1",
+    "T2",
+    "T5"
+   ],
+   "offset_ms": [
+    9,
+    24,
+    114,
+    140,
+    140,
+    205
+   ],
+   "predicted": {
+    "T3": "STALE",
+    "T4": "STALE",
+    "T6": "STALE",
+    "T1": "STALE",
+    "T2": "ARCHIVE",
+    "T5": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "08:11:00",
+   "order": [
+    "T2",
+    "T6",
+    "T4",
+    "T5",
+    "T3",
+    "T1"
+   ],
+   "offset_ms": [
+    27,
+    69,
+    105,
+    138,
+    272,
+    351
+   ],
+   "predicted": {
+    "T2": "STALE",
+    "T6": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T3": "ARCHIVE",
+    "T1": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "08:12:00",
+   "order": [
+    "T6",
+    "T1",
+    "T2",
+    "T5",
+    "T3",
+    "T4"
+   ],
+   "offset_ms": [
+    3,
+    18,
+    103,
+    111,
+    229,
+    258
+   ],
+   "predicted": {
+    "T6": "STALE",
+    "T1": "STALE",
+    "T2": "STALE",
+    "T5": "STALE",
+    "T3": "ARCHIVE",
+    "T4": "CURRENT"
+   },
+   "after_recreate": false
+  }
+ ],
+ "snapshots": [
+  {
+   "file": "snap-171025.txt",
+   "verdicts": {
+    "T1": "CURRENT",
+    "T2": "CURRENT",
+    "T3": "CURRENT",
+    "T4": "CURRENT",
+    "T5": "CURRENT",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "ORPHAN",
+    "T2": "ORPHAN",
+    "T3": "ORPHAN",
+    "T4": "ORPHAN",
+    "T5": "ORPHAN",
+    "T6": "ORPHAN"
+   },
+   "agree": 0,
+   "of": 6,
+   "count": {
+    "CURRENT": 6
+   },
+   "match": {
+    "boundary_utc": "08:10:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203570": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619800",
+     "name": "T1"
+    },
+    "203574": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619800",
+     "name": "T2"
+    },
+    "203578": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619800",
+     "name": "T3"
+    },
+    "203582": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619800",
+     "name": "T4"
+    },
+    "203586": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619800",
+     "name": "T5"
+    },
+    "203590": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619800",
+     "name": "T6"
+    }
+   }
+  },
+  {
+   "file": "snap-171125.txt",
+   "verdicts": {
+    "T1": "CURRENT",
+    "T2": "CURRENT",
+    "T3": "CURRENT",
+    "T4": "CURRENT",
+    "T5": "CURRENT",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "ORPHAN",
+    "T2": "ORPHAN",
+    "T3": "ORPHAN",
+    "T4": "ORPHAN",
+    "T5": "ORPHAN",
+    "T6": "ORPHAN"
+   },
+   "agree": 0,
+   "of": 6,
+   "count": {
+    "CURRENT": 6
+   },
+   "match": {
+    "boundary_utc": "08:11:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203570": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619860",
+     "name": "T1"
+    },
+    "203574": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619860",
+     "name": "T2"
+    },
+    "203578": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619860",
+     "name": "T3"
+    },
+    "203582": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619860",
+     "name": "T4"
+    },
+    "203586": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619860",
+     "name": "T5"
+    },
+    "203590": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619860",
+     "name": "T6"
+    }
+   }
+  },
+  {
+   "file": "snap-171225.txt",
+   "verdicts": {
+    "T1": "CURRENT",
+    "T2": "CURRENT",
+    "T3": "CURRENT",
+    "T4": "CURRENT",
+    "T5": "CURRENT",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "ORPHAN",
+    "T2": "ORPHAN",
+    "T3": "ORPHAN",
+    "T4": "ORPHAN",
+    "T5": "ORPHAN",
+    "T6": "ORPHAN"
+   },
+   "agree": 0,
+   "of": 6,
+   "count": {
+    "CURRENT": 6
+   },
+   "match": {
+    "boundary_utc": "08:12:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203570": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619920",
+     "name": "T1"
+    },
+    "203574": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619920",
+     "name": "T2"
+    },
+    "203578": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619920",
+     "name": "T3"
+    },
+    "203582": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619920",
+     "name": "T4"
+    },
+    "203586": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619920",
+     "name": "T5"
+    },
+    "203590": {
+     "nlink": "2",
+     "size": "4096",
+     "mtime": "1791619920",
+     "name": "T6"
+    }
+   }
+  }
+ ],
+ "stderr": {
+  "T1": {},
+  "T2": {},
+  "T3": {},
+  "T4": {},
+  "T5": {},
+  "T6": {}
+ },
+ "stderr_samples": {
+  "T1": [],
+  "T2": [],
+  "T3": [],
+  "T4": [],
+  "T5": [],
+  "T6": []
+ },
+ "last_minute": "2026-10-10-08-12",
+ "fates": {
+  "2026-10-10-08-09": {
+   "T1": "CURRENT",
+   "T2": "CURRENT",
+   "T3": "CURRENT",
+   "T4": "CURRENT",
+   "T5": "CURRENT",
+   "T6": "CURRENT"
+  },
+  "2026-10-10-08-10": {
+   "T1": "CURRENT",
+   "T2": "CURRENT",
+   "T3": "CURRENT",
+   "T4": "CURRENT",
+   "T5": "CURRENT",
+   "T6": "CURRENT"
+  },
+  "2026-10-10-08-11": {
+   "T1": "CURRENT",
+   "T2": "CURRENT",
+   "T3": "CURRENT",
+   "T4": "CURRENT",
+   "T5": "CURRENT",
+   "T6": "CURRENT"
+  },
+  "2026-10-10-08-12": {
+   "T1": "CURRENT",
+   "T2": "CURRENT",
+   "T3": "CURRENT",
+   "T4": "CURRENT",
+   "T5": "CURRENT",
+   "T6": "CURRENT"
+  }
+ },
+ "post_recreate": null
+}

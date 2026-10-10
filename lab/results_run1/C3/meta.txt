@@ -1,0 +1,7 @@
+id=C3
+nfs=3
+tasks=6
+duration=190
+start_epoch=1791619760
+desc=恒久対策（リンク先をタスクごとのディレクトリに）
+end_epoch=1791619961

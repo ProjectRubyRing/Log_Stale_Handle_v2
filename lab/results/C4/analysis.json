@@ -1,0 +1,520 @@
+{
+ "meta": {
+  "id": "C4",
+  "nfs": "3",
+  "tasks": "6",
+  "duration": "130",
+  "start_epoch": "1791626720",
+  "desc": "仮説 1（動いている最中にファイルシステムを作り直す）",
+  "recreate_epoch": "1791626795",
+  "end_epoch": "1791626861"
+ },
+ "tasks": [
+  "T1",
+  "T2",
+  "T3",
+  "T4",
+  "T5",
+  "T6"
+ ],
+ "totals": {
+  "emitted": 3126,
+  "lost": 3126
+ },
+ "per_task": {
+  "T1": {
+   "emitted": 521,
+   "lost": 521
+  },
+  "T2": {
+   "emitted": 518,
+   "lost": 518
+  },
+  "T3": {
+   "emitted": 531,
+   "lost": 531
+  },
+  "T4": {
+   "emitted": 519,
+   "lost": 519
+  },
+  "T5": {
+   "emitted": 527,
+   "lost": 527
+  },
+  "T6": {
+   "emitted": 510,
+   "lost": 510
+  }
+ },
+ "per_minute": {
+  "2026-10-10-10-05": {
+   "T1": {
+    "emitted": 154,
+    "lost": 154
+   },
+   "T2": {
+    "emitted": 160,
+    "lost": 160
+   },
+   "T3": {
+    "emitted": 160,
+    "lost": 160
+   },
+   "T4": {
+    "emitted": 153,
+    "lost": 153
+   },
+   "T5": {
+    "emitted": 153,
+    "lost": 153
+   },
+   "T6": {
+    "emitted": 148,
+    "lost": 148
+   }
+  },
+  "2026-10-10-10-06": {
+   "T1": {
+    "emitted": 243,
+    "lost": 243
+   },
+   "T2": {
+    "emitted": 232,
+    "lost": 232
+   },
+   "T3": {
+    "emitted": 242,
+    "lost": 242
+   },
+   "T4": {
+    "emitted": 241,
+    "lost": 241
+   },
+   "T5": {
+    "emitted": 240,
+    "lost": 240
+   },
+   "T6": {
+    "emitted": 237,
+    "lost": 237
+   }
+  },
+  "2026-10-10-10-07": {
+   "T1": {
+    "emitted": 124,
+    "lost": 124
+   },
+   "T2": {
+    "emitted": 126,
+    "lost": 126
+   },
+   "T3": {
+    "emitted": 129,
+    "lost": 129
+   },
+   "T4": {
+    "emitted": 125,
+    "lost": 125
+   },
+   "T5": {
+    "emitted": 134,
+    "lost": 134
+   },
+   "T6": {
+    "emitted": 125,
+    "lost": 125
+   }
+  }
+ },
+ "server_log": {
+  "T1": {
+   "expected": 52,
+   "found": 0
+  },
+  "T2": {
+   "expected": 51,
+   "found": 0
+  },
+  "T3": {
+   "expected": 53,
+   "found": 0
+  },
+  "T4": {
+   "expected": 51,
+   "found": 0
+  },
+  "T5": {
+   "expected": 52,
+   "found": 0
+  },
+  "T6": {
+   "expected": 51,
+   "found": 0
+  }
+ },
+ "files": {},
+ "broken_lines": {},
+ "nul_bytes": {},
+ "boundaries": [
+  {
+   "boundary_utc": "10:06:00",
+   "order": [
+    "T1",
+    "T4",
+    "T3",
+    "T6",
+    "T5",
+    "T2"
+   ],
+   "offset_ms": [
+    9,
+    36,
+    41,
+    51,
+    71,
+    285
+   ],
+   "predicted": {
+    "T1": "STALE",
+    "T4": "STALE",
+    "T3": "STALE",
+    "T6": "STALE",
+    "T5": "ARCHIVE",
+    "T2": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "10:07:00",
+   "order": [
+    "T2",
+    "T6",
+    "T5",
+    "T1",
+    "T3",
+    "T4"
+   ],
+   "offset_ms": [
+    32,
+    47,
+    64,
+    107,
+    169,
+    226
+   ],
+   "predicted": {
+    "T2": "STALE",
+    "T6": "STALE",
+    "T5": "STALE",
+    "T1": "STALE",
+    "T3": "ARCHIVE",
+    "T4": "CURRENT"
+   },
+   "after_recreate": true
+  }
+ ],
+ "snapshots": [
+  {
+   "file": "snap-190725.txt",
+   "verdicts": {
+    "T1": "MOUNTSTALE",
+    "T2": "MOUNTSTALE",
+    "T3": "MOUNTSTALE",
+    "T4": "MOUNTSTALE",
+    "T5": "MOUNTSTALE",
+    "T6": "MOUNTSTALE"
+   },
+   "truth": {
+    "T1": "MOUNTSTALE",
+    "T2": "MOUNTSTALE",
+    "T3": "MOUNTSTALE",
+    "T4": "MOUNTSTALE",
+    "T5": "MOUNTSTALE",
+    "T6": "MOUNTSTALE"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "MOUNTSTALE": 6
+   },
+   "match": null,
+   "server": {}
+  },
+  {
+   "file": "snap-before-recreate.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "CURRENT",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "CURRENT",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "STALE": 5,
+    "CURRENT": 1
+   },
+   "match": null,
+   "server": {
+    "203663": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626761",
+     "name": "mid/T1/server.log.2026-10-10-10-05"
+    },
+    "203702": {
+     "nlink": "1",
+     "size": "108",
+     "mtime": "1791626767",
+     "name": "mid/T1/server.log"
+    },
+    "203676": {
+     "nlink": "1",
+     "size": "567",
+     "mtime": "1791626763",
+     "name": "mid/T2/server.log.2026-10-10-10-05"
+    },
+    "203706": {
+     "nlink": "1",
+     "size": "72",
+     "mtime": "1791626767",
+     "name": "mid/T2/server.log"
+    },
+    "203695": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626761",
+     "name": "mid/T5/server.log.2026-10-10-10-05"
+    },
+    "203704": {
+     "nlink": "1",
+     "size": "108",
+     "mtime": "1791626768",
+     "name": "mid/T5/server.log"
+    },
+    "203698": {
+     "nlink": "1",
+     "size": "495",
+     "mtime": "1791626760",
+     "name": "mid/T6/server.log.2026-10-10-10-05"
+    },
+    "203701": {
+     "nlink": "1",
+     "size": "144",
+     "mtime": "1791626768",
+     "name": "mid/T6/server.log"
+    },
+    "203684": {
+     "nlink": "1",
+     "size": "567",
+     "mtime": "1791626762",
+     "name": "mid/T3/server.log.2026-10-10-10-05"
+    },
+    "203705": {
+     "nlink": "1",
+     "size": "108",
+     "mtime": "1791626767",
+     "name": "mid/T3/server.log"
+    },
+    "203692": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626761",
+     "name": "mid/T4/server.log.2026-10-10-10-05"
+    },
+    "203703": {
+     "nlink": "1",
+     "size": "108",
+     "mtime": "1791626767",
+     "name": "mid/T4/server.log"
+    },
+    "203700": {
+     "nlink": "1",
+     "size": "725",
+     "mtime": "1791626767",
+     "name": "tracelog"
+    },
+    "203661": {
+     "nlink": "1",
+     "size": "4619",
+     "mtime": "1791626760",
+     "name": "trace.log.2026-10-10-10-05"
+    }
+   }
+  }
+ ],
+ "stderr": {
+  "T1": {
+   "write_err_trace": 2,
+   "stale": 16,
+   "write_err_server": 2,
+   "close_err": 2,
+   "create_err": 2
+  },
+  "T2": {
+   "write_err_server": 2,
+   "stale": 16,
+   "write_err_trace": 2,
+   "close_err": 2,
+   "create_err": 2
+  },
+  "T3": {
+   "write_err_trace": 2,
+   "stale": 16,
+   "write_err_server": 2,
+   "close_err": 2,
+   "create_err": 2
+  },
+  "T4": {
+   "write_err_trace": 2,
+   "stale": 16,
+   "write_err_server": 2,
+   "close_err": 2,
+   "create_err": 2
+  },
+  "T5": {
+   "write_err_trace": 2,
+   "stale": 16,
+   "write_err_server": 2,
+   "close_err": 2,
+   "create_err": 2
+  },
+  "T6": {
+   "write_err_trace": 2,
+   "stale": 16,
+   "write_err_server": 2,
+   "close_err": 2,
+   "create_err": 2
+  }
+ },
+ "stderr_samples": {
+  "T1": [
+   "2026-10-10T10:06:03.080138364Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:03.368336735Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:24.277167213Z main ERROR Unable to write to stream /mnt/logs/front/logs/inter-api/mid/T1/server.log for appender SERVER",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T1/server.log"
+  ],
+  "T2": [
+   "2026-10-10T10:06:24.917729047Z main ERROR Unable to write to stream /mnt/logs/front/logs/inter-api/mid/T2/server.log for appender SERVER",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T2/server.log",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T2/server.log",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:25.431451073Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:25.574265922Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog"
+  ],
+  "T3": [
+   "2026-10-10T10:06:03.336098838Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:03.455475976Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:24.586425353Z main ERROR Unable to write to stream /mnt/logs/front/logs/inter-api/mid/T3/server.log for appender SERVER",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T3/server.log"
+  ],
+  "T4": [
+   "2026-10-10T10:06:03.123079853Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:03.319496871Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:24.759547203Z main ERROR Unable to write to stream /mnt/logs/front/logs/inter-api/mid/T4/server.log for appender SERVER",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T4/server.log"
+  ],
+  "T5": [
+   "2026-10-10T10:06:03.140405016Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:03.430683750Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:24.148479826Z main ERROR Unable to write to stream /mnt/logs/front/logs/inter-api/mid/T5/server.log for appender SERVER",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T5/server.log"
+  ],
+  "T6": [
+   "2026-10-10T10:06:03.112218116Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:03.357664163Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T10:06:23.966774969Z main ERROR Unable to write to stream /mnt/logs/front/logs/inter-api/mid/T6/server.log for appender SERVER",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /mnt/logs/front/logs/inter-api/mid/T6/server.log"
+  ]
+ },
+ "last_minute": "2026-10-10-10-07",
+ "fates": {
+  "2026-10-10-10-05": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  },
+  "2026-10-10-10-06": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  },
+  "2026-10-10-10-07": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  }
+ },
+ "post_recreate": {
+  "trace_emitted": 1367,
+  "trace_found": 0,
+  "server_emitted": 137,
+  "server_found": 0
+ }
+}

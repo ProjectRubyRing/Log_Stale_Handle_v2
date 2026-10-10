@@ -1,0 +1,7 @@
+id=C1
+nfs=3
+tasks=6
+duration=250
+start_epoch=1791625880
+desc=いまの構成（6 タスクが同じ tracelog）
+end_epoch=1791626142

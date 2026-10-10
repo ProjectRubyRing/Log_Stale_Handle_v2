@@ -1,0 +1,1169 @@
+{
+ "meta": {
+  "id": "C2",
+  "nfs": "4.1",
+  "tasks": "6",
+  "duration": "250",
+  "start_epoch": "1791626180",
+  "desc": "いまの構成（6 タスクが同じ tracelog）",
+  "end_epoch": "1791626442"
+ },
+ "tasks": [
+  "T1",
+  "T2",
+  "T3",
+  "T4",
+  "T5",
+  "T6"
+ ],
+ "totals": {
+  "emitted": 5998,
+  "lost": 4994,
+  "ok": 1004
+ },
+ "per_task": {
+  "T1": {
+   "emitted": 1001,
+   "lost": 633,
+   "ok": 368
+  },
+  "T2": {
+   "emitted": 997,
+   "lost": 997
+  },
+  "T3": {
+   "emitted": 1007,
+   "lost": 1004,
+   "ok": 3
+  },
+  "T4": {
+   "emitted": 1003,
+   "lost": 1003
+  },
+  "T5": {
+   "emitted": 998,
+   "ok": 391,
+   "lost": 607
+  },
+  "T6": {
+   "emitted": 992,
+   "lost": 750,
+   "ok": 242
+  }
+ },
+ "per_minute": {
+  "2026-10-10-09-56": {
+   "T1": {
+    "emitted": 152,
+    "lost": 152
+   },
+   "T2": {
+    "emitted": 156,
+    "lost": 156
+   },
+   "T3": {
+    "emitted": 158,
+    "lost": 155,
+    "ok": 3
+   },
+   "T4": {
+    "emitted": 151,
+    "lost": 151
+   },
+   "T5": {
+    "emitted": 151,
+    "ok": 151
+   },
+   "T6": {
+    "emitted": 144,
+    "lost": 143,
+    "ok": 1
+   }
+  },
+  "2026-10-10-09-57": {
+   "T1": {
+    "emitted": 243,
+    "lost": 243
+   },
+   "T2": {
+    "emitted": 236,
+    "lost": 236
+   },
+   "T3": {
+    "emitted": 241,
+    "lost": 241
+   },
+   "T4": {
+    "emitted": 240,
+    "lost": 240
+   },
+   "T5": {
+    "emitted": 240,
+    "ok": 240
+   },
+   "T6": {
+    "emitted": 239,
+    "lost": 239
+   }
+  },
+  "2026-10-10-09-58": {
+   "T1": {
+    "emitted": 243,
+    "ok": 243
+   },
+   "T2": {
+    "emitted": 244,
+    "lost": 244
+   },
+   "T3": {
+    "emitted": 247,
+    "lost": 247
+   },
+   "T4": {
+    "emitted": 237,
+    "lost": 237
+   },
+   "T5": {
+    "emitted": 240,
+    "lost": 240
+   },
+   "T6": {
+    "emitted": 236,
+    "lost": 236
+   }
+  },
+  "2026-10-10-09-59": {
+   "T1": {
+    "emitted": 238,
+    "lost": 238
+   },
+   "T2": {
+    "emitted": 235,
+    "lost": 235
+   },
+   "T3": {
+    "emitted": 233,
+    "lost": 233
+   },
+   "T4": {
+    "emitted": 243,
+    "lost": 243
+   },
+   "T5": {
+    "emitted": 234,
+    "lost": 234
+   },
+   "T6": {
+    "emitted": 241,
+    "ok": 241
+   }
+  },
+  "2026-10-10-10-00": {
+   "T1": {
+    "emitted": 125,
+    "ok": 125
+   },
+   "T2": {
+    "emitted": 126,
+    "lost": 126
+   },
+   "T3": {
+    "emitted": 128,
+    "lost": 128
+   },
+   "T4": {
+    "emitted": 132,
+    "lost": 132
+   },
+   "T5": {
+    "emitted": 133,
+    "lost": 133
+   },
+   "T6": {
+    "emitted": 132,
+    "lost": 132
+   }
+  }
+ },
+ "server_log": {
+  "T1": {
+   "expected": 100,
+   "found": 100
+  },
+  "T2": {
+   "expected": 99,
+   "found": 99
+  },
+  "T3": {
+   "expected": 100,
+   "found": 100
+  },
+  "T4": {
+   "expected": 100,
+   "found": 100
+  },
+  "T5": {
+   "expected": 99,
+   "found": 99
+  },
+  "T6": {
+   "expected": 99,
+   "found": 99
+  }
+ },
+ "files": {
+  "trace.log.2026-10-10-09-56": {
+   "tasks": {
+    "T5": 151,
+    "T3": 3,
+    "T6": 1
+   },
+   "minutes": {
+    "2026-10-10-09-56": 155
+   },
+   "size": 4503,
+   "nul": 116,
+   "broken": 0
+  },
+  "trace.log.2026-10-10-09-57": {
+   "tasks": {
+    "T5": 240
+   },
+   "minutes": {
+    "2026-10-10-09-57": 240
+   },
+   "size": 6960,
+   "nul": 0,
+   "broken": 0
+  },
+  "trace.log.2026-10-10-09-58": {
+   "tasks": {
+    "T1": 243
+   },
+   "minutes": {
+    "2026-10-10-09-58": 243
+   },
+   "size": 7047,
+   "nul": 0,
+   "broken": 0
+  },
+  "trace.log.2026-10-10-09-59": {
+   "tasks": {
+    "T6": 241
+   },
+   "minutes": {
+    "2026-10-10-09-59": 241
+   },
+   "size": 6989,
+   "nul": 0,
+   "broken": 0
+  },
+  "tracelog": {
+   "tasks": {
+    "T1": 125
+   },
+   "minutes": {
+    "2026-10-10-10-00": 125
+   },
+   "size": 3627,
+   "nul": 0,
+   "broken": 0
+  }
+ },
+ "broken_lines": {},
+ "nul_bytes": {
+  "trace.log.2026-10-10-09-56": 116
+ },
+ "boundaries": [
+  {
+   "boundary_utc": "09:57:00",
+   "order": [
+    "T2",
+    "T1",
+    "T4",
+    "T6",
+    "T3",
+    "T5"
+   ],
+   "offset_ms": [
+    7,
+    69,
+    86,
+    96,
+    148,
+    194
+   ],
+   "predicted": {
+    "T2": "ORPHAN",
+    "T1": "ORPHAN",
+    "T4": "ORPHAN",
+    "T6": "ORPHAN",
+    "T3": "ARCHIVE",
+    "T5": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "09:58:00",
+   "order": [
+    "T4",
+    "T6",
+    "T2",
+    "T3",
+    "T5",
+    "T1"
+   ],
+   "offset_ms": [
+    32,
+    50,
+    62,
+    119,
+    132,
+    275
+   ],
+   "predicted": {
+    "T4": "ORPHAN",
+    "T6": "ORPHAN",
+    "T2": "ORPHAN",
+    "T3": "ORPHAN",
+    "T5": "ARCHIVE",
+    "T1": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "09:59:00",
+   "order": [
+    "T3",
+    "T5",
+    "T2",
+    "T1",
+    "T4",
+    "T6"
+   ],
+   "offset_ms": [
+    40,
+    108,
+    142,
+    150,
+    192,
+    312
+   ],
+   "predicted": {
+    "T3": "ORPHAN",
+    "T5": "ORPHAN",
+    "T2": "ORPHAN",
+    "T1": "ORPHAN",
+    "T4": "ARCHIVE",
+    "T6": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "10:00:00",
+   "order": [
+    "T2",
+    "T3",
+    "T5",
+    "T4",
+    "T6",
+    "T1"
+   ],
+   "offset_ms": [
+    16,
+    95,
+    150,
+    184,
+    211,
+    265
+   ],
+   "predicted": {
+    "T2": "ORPHAN",
+    "T3": "ORPHAN",
+    "T5": "ORPHAN",
+    "T4": "ORPHAN",
+    "T6": "ARCHIVE",
+    "T1": "CURRENT"
+   },
+   "after_recreate": false
+  }
+ ],
+ "snapshots": [
+  {
+   "file": "snap-185725.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "CURRENT",
+    "T6": "STALE"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "CURRENT",
+    "T6": "STALE"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "STALE": 5,
+    "CURRENT": 1
+   },
+   "match": {
+    "boundary_utc": "09:57:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203661": {
+     "nlink": "1",
+     "size": "4503",
+     "mtime": "1791626220",
+     "name": "trace.log.2026-10-10-09-56"
+    },
+    "203668": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626221",
+     "name": "mid/T1/server.log.2026-10-10-09-56"
+    },
+    "203709": {
+     "nlink": "1",
+     "size": "324",
+     "mtime": "1791626243",
+     "name": "mid/T1/server.log"
+    },
+    "203676": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T2/server.log.2026-10-10-09-56"
+    },
+    "203707": {
+     "nlink": "1",
+     "size": "324",
+     "mtime": "1791626243",
+     "name": "mid/T2/server.log"
+    },
+    "203695": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T5/server.log.2026-10-10-09-56"
+    },
+    "203711": {
+     "nlink": "1",
+     "size": "324",
+     "mtime": "1791626244",
+     "name": "mid/T5/server.log"
+    },
+    "203698": {
+     "nlink": "1",
+     "size": "495",
+     "mtime": "1791626220",
+     "name": "mid/T6/server.log.2026-10-10-09-56"
+    },
+    "203708": {
+     "nlink": "1",
+     "size": "324",
+     "mtime": "1791626244",
+     "name": "mid/T6/server.log"
+    },
+    "203684": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T3/server.log.2026-10-10-09-56"
+    },
+    "203706": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626243",
+     "name": "mid/T3/server.log"
+    },
+    "203692": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T4/server.log.2026-10-10-09-56"
+    },
+    "203710": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626244",
+     "name": "mid/T4/server.log"
+    },
+    "203705": {
+     "nlink": "1",
+     "size": "2813",
+     "mtime": "1791626244",
+     "name": "tracelog"
+    }
+   }
+  },
+  {
+   "file": "snap-185825.txt",
+   "verdicts": {
+    "T1": "CURRENT",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "truth": {
+    "T1": "CURRENT",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "CURRENT": 1,
+    "STALE": 5
+   },
+   "match": {
+    "boundary_utc": "09:58:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203705": {
+     "nlink": "1",
+     "size": "6960",
+     "mtime": "1791626280",
+     "name": "trace.log.2026-10-10-09-57"
+    },
+    "203661": {
+     "nlink": "1",
+     "size": "4503",
+     "mtime": "1791626220",
+     "name": "trace.log.2026-10-10-09-56"
+    },
+    "203709": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626280",
+     "name": "mid/T1/server.log.2026-10-10-09-57"
+    },
+    "203668": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626221",
+     "name": "mid/T1/server.log.2026-10-10-09-56"
+    },
+    "203701": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626304",
+     "name": "mid/T1/server.log"
+    },
+    "203707": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626281",
+     "name": "mid/T2/server.log.2026-10-10-09-57"
+    },
+    "203676": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T2/server.log.2026-10-10-09-56"
+    },
+    "203715": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626304",
+     "name": "mid/T2/server.log"
+    },
+    "203711": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T5/server.log.2026-10-10-09-57"
+    },
+    "203695": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T5/server.log.2026-10-10-09-56"
+    },
+    "203717": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626305",
+     "name": "mid/T5/server.log"
+    },
+    "203708": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T6/server.log.2026-10-10-09-57"
+    },
+    "203698": {
+     "nlink": "1",
+     "size": "495",
+     "mtime": "1791626220",
+     "name": "mid/T6/server.log.2026-10-10-09-56"
+    },
+    "203716": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626305",
+     "name": "mid/T6/server.log"
+    },
+    "203706": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626280",
+     "name": "mid/T3/server.log.2026-10-10-09-57"
+    },
+    "203684": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T3/server.log.2026-10-10-09-56"
+    },
+    "203703": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626305",
+     "name": "mid/T3/server.log"
+    },
+    "203710": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T4/server.log.2026-10-10-09-57"
+    },
+    "203692": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T4/server.log.2026-10-10-09-56"
+    },
+    "203718": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626305",
+     "name": "mid/T4/server.log"
+    },
+    "203704": {
+     "nlink": "1",
+     "size": "2871",
+     "mtime": "1791626304",
+     "name": "tracelog"
+    }
+   }
+  },
+  {
+   "file": "snap-185925.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "CURRENT"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "STALE": 5,
+    "CURRENT": 1
+   },
+   "match": {
+    "boundary_utc": "09:59:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203704": {
+     "nlink": "1",
+     "size": "7047",
+     "mtime": "1791626340",
+     "name": "trace.log.2026-10-10-09-58"
+    },
+    "203705": {
+     "nlink": "1",
+     "size": "6960",
+     "mtime": "1791626280",
+     "name": "trace.log.2026-10-10-09-57"
+    },
+    "203661": {
+     "nlink": "1",
+     "size": "4503",
+     "mtime": "1791626220",
+     "name": "trace.log.2026-10-10-09-56"
+    },
+    "203709": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626280",
+     "name": "mid/T1/server.log.2026-10-10-09-57"
+    },
+    "203701": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626340",
+     "name": "mid/T1/server.log.2026-10-10-09-58"
+    },
+    "203668": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626221",
+     "name": "mid/T1/server.log.2026-10-10-09-56"
+    },
+    "203712": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626365",
+     "name": "mid/T1/server.log"
+    },
+    "203707": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626281",
+     "name": "mid/T2/server.log.2026-10-10-09-57"
+    },
+    "203715": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626340",
+     "name": "mid/T2/server.log.2026-10-10-09-58"
+    },
+    "203676": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T2/server.log.2026-10-10-09-56"
+    },
+    "203723": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626365",
+     "name": "mid/T2/server.log"
+    },
+    "203711": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T5/server.log.2026-10-10-09-57"
+    },
+    "203717": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626342",
+     "name": "mid/T5/server.log.2026-10-10-09-58"
+    },
+    "203695": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T5/server.log.2026-10-10-09-56"
+    },
+    "203725": {
+     "nlink": "1",
+     "size": "360",
+     "mtime": "1791626367",
+     "name": "mid/T5/server.log"
+    },
+    "203708": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T6/server.log.2026-10-10-09-57"
+    },
+    "203716": {
+     "nlink": "1",
+     "size": "828",
+     "mtime": "1791626340",
+     "name": "mid/T6/server.log.2026-10-10-09-58"
+    },
+    "203698": {
+     "nlink": "1",
+     "size": "495",
+     "mtime": "1791626220",
+     "name": "mid/T6/server.log.2026-10-10-09-56"
+    },
+    "203722": {
+     "nlink": "1",
+     "size": "432",
+     "mtime": "1791626367",
+     "name": "mid/T6/server.log"
+    },
+    "203706": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626280",
+     "name": "mid/T3/server.log.2026-10-10-09-57"
+    },
+    "203703": {
+     "nlink": "1",
+     "size": "900",
+     "mtime": "1791626340",
+     "name": "mid/T3/server.log.2026-10-10-09-58"
+    },
+    "203684": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T3/server.log.2026-10-10-09-56"
+    },
+    "203724": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626366",
+     "name": "mid/T3/server.log"
+    },
+    "203710": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T4/server.log.2026-10-10-09-57"
+    },
+    "203718": {
+     "nlink": "1",
+     "size": "828",
+     "mtime": "1791626340",
+     "name": "mid/T4/server.log.2026-10-10-09-58"
+    },
+    "203692": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T4/server.log.2026-10-10-09-56"
+    },
+    "203713": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626367",
+     "name": "mid/T4/server.log"
+    },
+    "203721": {
+     "nlink": "1",
+     "size": "3248",
+     "mtime": "1791626367",
+     "name": "tracelog"
+    }
+   }
+  },
+  {
+   "file": "snap-190025.txt",
+   "verdicts": {
+    "T1": "CURRENT",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "truth": {
+    "T1": "CURRENT",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "CURRENT": 1,
+    "STALE": 5
+   },
+   "match": {
+    "boundary_utc": "10:00:00",
+    "agree": 1,
+    "of": 6
+   },
+   "server": {
+    "203704": {
+     "nlink": "1",
+     "size": "7047",
+     "mtime": "1791626340",
+     "name": "trace.log.2026-10-10-09-58"
+    },
+    "203705": {
+     "nlink": "1",
+     "size": "6960",
+     "mtime": "1791626280",
+     "name": "trace.log.2026-10-10-09-57"
+    },
+    "203661": {
+     "nlink": "1",
+     "size": "4503",
+     "mtime": "1791626220",
+     "name": "trace.log.2026-10-10-09-56"
+    },
+    "203709": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626280",
+     "name": "mid/T1/server.log.2026-10-10-09-57"
+    },
+    "203701": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626340",
+     "name": "mid/T1/server.log.2026-10-10-09-58"
+    },
+    "203668": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626221",
+     "name": "mid/T1/server.log.2026-10-10-09-56"
+    },
+    "203712": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626401",
+     "name": "mid/T1/server.log.2026-10-10-09-59"
+    },
+    "203729": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626427",
+     "name": "mid/T1/server.log"
+    },
+    "203707": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626281",
+     "name": "mid/T2/server.log.2026-10-10-09-57"
+    },
+    "203715": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626340",
+     "name": "mid/T2/server.log.2026-10-10-09-58"
+    },
+    "203676": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T2/server.log.2026-10-10-09-56"
+    },
+    "203723": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626402",
+     "name": "mid/T2/server.log.2026-10-10-09-59"
+    },
+    "203732": {
+     "nlink": "1",
+     "size": "396",
+     "mtime": "1791626427",
+     "name": "mid/T2/server.log"
+    },
+    "203711": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T5/server.log.2026-10-10-09-57"
+    },
+    "203717": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626342",
+     "name": "mid/T5/server.log.2026-10-10-09-58"
+    },
+    "203695": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T5/server.log.2026-10-10-09-56"
+    },
+    "203725": {
+     "nlink": "1",
+     "size": "828",
+     "mtime": "1791626401",
+     "name": "mid/T5/server.log.2026-10-10-09-59"
+    },
+    "203720": {
+     "nlink": "1",
+     "size": "216",
+     "mtime": "1791626413",
+     "name": "mid/T5/server.log"
+    },
+    "203708": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T6/server.log.2026-10-10-09-57"
+    },
+    "203716": {
+     "nlink": "1",
+     "size": "828",
+     "mtime": "1791626340",
+     "name": "mid/T6/server.log.2026-10-10-09-58"
+    },
+    "203698": {
+     "nlink": "1",
+     "size": "495",
+     "mtime": "1791626220",
+     "name": "mid/T6/server.log.2026-10-10-09-56"
+    },
+    "203722": {
+     "nlink": "1",
+     "size": "900",
+     "mtime": "1791626401",
+     "name": "mid/T6/server.log.2026-10-10-09-59"
+    },
+    "203730": {
+     "nlink": "1",
+     "size": "180",
+     "mtime": "1791626413",
+     "name": "mid/T6/server.log"
+    },
+    "203706": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626280",
+     "name": "mid/T3/server.log.2026-10-10-09-57"
+    },
+    "203703": {
+     "nlink": "1",
+     "size": "900",
+     "mtime": "1791626340",
+     "name": "mid/T3/server.log.2026-10-10-09-58"
+    },
+    "203684": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626220",
+     "name": "mid/T3/server.log.2026-10-10-09-56"
+    },
+    "203724": {
+     "nlink": "1",
+     "size": "828",
+     "mtime": "1791626400",
+     "name": "mid/T3/server.log.2026-10-10-09-59"
+    },
+    "203727": {
+     "nlink": "1",
+     "size": "180",
+     "mtime": "1791626412",
+     "name": "mid/T3/server.log"
+    },
+    "203710": {
+     "nlink": "1",
+     "size": "864",
+     "mtime": "1791626282",
+     "name": "mid/T4/server.log.2026-10-10-09-57"
+    },
+    "203718": {
+     "nlink": "1",
+     "size": "828",
+     "mtime": "1791626340",
+     "name": "mid/T4/server.log.2026-10-10-09-58"
+    },
+    "203692": {
+     "nlink": "1",
+     "size": "531",
+     "mtime": "1791626222",
+     "name": "mid/T4/server.log.2026-10-10-09-56"
+    },
+    "203713": {
+     "nlink": "1",
+     "size": "900",
+     "mtime": "1791626402",
+     "name": "mid/T4/server.log.2026-10-10-09-59"
+    },
+    "203731": {
+     "nlink": "1",
+     "size": "180",
+     "mtime": "1791626413",
+     "name": "mid/T4/server.log"
+    },
+    "203728": {
+     "nlink": "1",
+     "size": "3074",
+     "mtime": "1791626427",
+     "name": "tracelog"
+    },
+    "203721": {
+     "nlink": "1",
+     "size": "6989",
+     "mtime": "1791626400",
+     "name": "trace.log.2026-10-10-09-59"
+    }
+   }
+  }
+ ],
+ "stderr": {
+  "T1": {},
+  "T2": {},
+  "T3": {},
+  "T4": {},
+  "T5": {},
+  "T6": {}
+ },
+ "stderr_samples": {
+  "T1": [],
+  "T2": [],
+  "T3": [],
+  "T4": [],
+  "T5": [],
+  "T6": []
+ },
+ "last_minute": "2026-10-10-10-00",
+ "fates": {
+  "2026-10-10-09-56": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "CURRENT",
+   "T6": "STALE"
+  },
+  "2026-10-10-09-57": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "CURRENT",
+   "T6": "STALE"
+  },
+  "2026-10-10-09-58": {
+   "T1": "CURRENT",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  },
+  "2026-10-10-09-59": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "CURRENT"
+  },
+  "2026-10-10-10-00": {
+   "T1": "CURRENT",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  }
+ },
+ "post_recreate": null
+}

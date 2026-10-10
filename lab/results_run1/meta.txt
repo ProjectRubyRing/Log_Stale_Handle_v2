@@ -1,0 +1,4 @@
+date=2026-10-10 17:04:02 +0900
+docker=29.8.1 kernel=5.15.153.1-microsoft-standard-WSL2
+client=Red Hat Enterprise Linux release 9.8 (Plow) java=openjdk version "21.0.12.1" 2026-08-18 LTS log4j=2.25.3
+server= knfsd（Docker の VM のカーネル）

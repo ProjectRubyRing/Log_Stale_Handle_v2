@@ -1,0 +1,7 @@
+id=C3
+nfs=3
+tasks=6
+duration=190
+start_epoch=1791626960
+desc=恒久対策（-Diwin.log を JBoss と同じ mid/{タスク} に）
+end_epoch=1791627160

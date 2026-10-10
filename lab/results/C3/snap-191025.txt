@@ -1,0 +1,44 @@
+# snapshot 2026-10-10 19:10:25
+## T1
+VERDICT=CURRENT host=task-1 pid=23 fd=6 fd_inode=203715 cur_inode=203715 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T1 は 24 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T2
+VERDICT=CURRENT host=task-2 pid=22 fd=6 fd_inode=203615 cur_inode=203615 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T2 は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T3
+VERDICT=CURRENT host=task-3 pid=21 fd=6 fd_inode=203714 cur_inode=203714 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T3 は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T4
+VERDICT=CURRENT host=task-4 pid=21 fd=6 fd_inode=203712 cur_inode=203712 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T4 は 24 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T5
+VERDICT=CURRENT host=task-5 pid=22 fd=6 fd_inode=203713 cur_inode=203713 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T5 は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T6
+VERDICT=CURRENT host=task-6 pid=22 fd=6 fd_inode=203711 cur_inode=203711 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api/mid/T6 は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## SERVER
+203669 1 4300 1791627000 ./mid/T1/trace.log.2026-10-10-10-09
+203676 1 531 1791627001 ./mid/T1/server.log.2026-10-10-10-09
+203715 1 2639 1791627023 ./mid/T1/tracelog
+203720 1 324 1791627023 ./mid/T1/server.log
+203684 1 4416 1791627000 ./mid/T2/trace.log.2026-10-10-10-09
+203685 1 531 1791627000 ./mid/T2/server.log.2026-10-10-10-09
+203615 1 2552 1791627023 ./mid/T2/tracelog
+203718 1 324 1791627023 ./mid/T2/server.log
+203705 1 4271 1791627000 ./mid/T5/trace.log.2026-10-10-10-09
+203706 1 531 1791627002 ./mid/T5/server.log.2026-10-10-10-09
+203713 1 2842 1791627024 ./mid/T5/tracelog
+203722 1 324 1791627024 ./mid/T5/server.log
+203708 1 4068 1791627000 ./mid/T6/trace.log.2026-10-10-10-09
+203709 1 495 1791627000 ./mid/T6/server.log.2026-10-10-10-09
+203711 1 2755 1791627024 ./mid/T6/tracelog
+203719 1 324 1791627024 ./mid/T6/server.log
+203693 1 4474 1791627000 ./mid/T3/trace.log.2026-10-10-10-09
+203694 1 531 1791627000 ./mid/T3/server.log.2026-10-10-10-09
+203714 1 2755 1791627023 ./mid/T3/tracelog
+203717 1 360 1791627023 ./mid/T3/server.log
+203702 1 4271 1791627000 ./mid/T4/trace.log.2026-10-10-10-09
+203703 1 531 1791627002 ./mid/T4/server.log.2026-10-10-10-09
+203712 1 2958 1791627023 ./mid/T4/tracelog
+203721 1 360 1791627023 ./mid/T4/server.log

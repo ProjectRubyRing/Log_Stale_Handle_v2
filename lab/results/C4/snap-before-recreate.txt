@@ -1,0 +1,34 @@
+# snapshot 2026-10-10 19:06:16
+## T1
+VERDICT=STALE host=task-1 pid=21 fd=6 fd_inode=- cur_inode=203700 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 16 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T2
+VERDICT=CURRENT host=task-2 pid=22 fd=6 fd_inode=203700 cur_inode=203700 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 16 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T3
+VERDICT=STALE host=task-3 pid=21 fd=6 fd_inode=- cur_inode=203700 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 17 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T4
+VERDICT=STALE host=task-4 pid=21 fd=6 fd_inode=- cur_inode=203700 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 17 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T5
+VERDICT=STALE host=task-5 pid=21 fd=6 fd_inode=- cur_inode=203700 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 17 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T6
+VERDICT=STALE host=task-6 pid=20 fd=6 fd_inode=- cur_inode=203700 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 18 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## SERVER
+203663 1 531 1791626761 ./mid/T1/server.log.2026-10-10-10-05
+203702 1 108 1791626767 ./mid/T1/server.log
+203676 1 567 1791626763 ./mid/T2/server.log.2026-10-10-10-05
+203706 1 72 1791626767 ./mid/T2/server.log
+203695 1 531 1791626761 ./mid/T5/server.log.2026-10-10-10-05
+203704 1 108 1791626768 ./mid/T5/server.log
+203698 1 495 1791626760 ./mid/T6/server.log.2026-10-10-10-05
+203701 1 144 1791626768 ./mid/T6/server.log
+203684 1 567 1791626762 ./mid/T3/server.log.2026-10-10-10-05
+203705 1 108 1791626767 ./mid/T3/server.log
+203692 1 531 1791626761 ./mid/T4/server.log.2026-10-10-10-05
+203703 1 108 1791626767 ./mid/T4/server.log
+203700 1 725 1791626767 ./tracelog
+203661 1 4619 1791626760 ./trace.log.2026-10-10-10-05

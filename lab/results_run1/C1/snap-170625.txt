@@ -1,0 +1,17 @@
+# snapshot 2026-10-10 17:06:25
+## T1
+VERDICT=STALE host=unknown pid=20 fd=6 fd_inode=- cur_inode=203626 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+## T2
+VERDICT=CURRENT host=unknown pid=21 fd=6 fd_inode=203627 cur_inode=203627 nlink=1 name=tracelog
+## T3
+VERDICT=STALE host=unknown pid=20 fd=6 fd_inode=- cur_inode=203626 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+## T4
+VERDICT=STALE host=unknown pid=20 fd=6 fd_inode=- cur_inode=203627 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+## T5
+VERDICT=STALE host=unknown pid=20 fd=6 fd_inode=- cur_inode=203627 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+## T6
+VERDICT=STALE host=unknown pid=20 fd=6 fd_inode=- cur_inode=203627 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+## SERVER
+203619 1 6931 1791619560 trace.log.2026-10-10-08-04
+203580 1 6989 1791619560 trace.log.2026-10-10-08-05
+203627 1 2900 1791619585 tracelog

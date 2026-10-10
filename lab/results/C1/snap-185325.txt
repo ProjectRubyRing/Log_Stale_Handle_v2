@@ -1,0 +1,41 @@
+# snapshot 2026-10-10 18:53:25
+## T1
+VERDICT=STALE host=task-1 pid=22 fd=6 fd_inode=- cur_inode=203707 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T2
+VERDICT=STALE host=task-2 pid=23 fd=6 fd_inode=- cur_inode=203707 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T3
+VERDICT=CURRENT host=task-3 pid=22 fd=6 fd_inode=203707 cur_inode=203707 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T4
+VERDICT=STALE host=task-4 pid=22 fd=6 fd_inode=- cur_inode=203707 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T5
+VERDICT=STALE host=task-5 pid=22 fd=6 fd_inode=- cur_inode=203707 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T6
+VERDICT=STALE host=task-6 pid=22 fd=6 fd_inode=- cur_inode=203707 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## SERVER
+203700 1 6989 1791625980 ./trace.log.2026-10-10-09-52
+203668 1 531 1791625922 ./mid/T1/server.log.2026-10-10-09-51
+203705 1 864 1791625981 ./mid/T1/server.log.2026-10-10-09-52
+203710 1 360 1791626004 ./mid/T1/server.log
+203676 1 531 1791625920 ./mid/T2/server.log.2026-10-10-09-51
+203703 1 864 1791625982 ./mid/T2/server.log.2026-10-10-09-52
+203711 1 360 1791626004 ./mid/T2/server.log
+203695 1 531 1791625922 ./mid/T5/server.log.2026-10-10-09-51
+203706 1 828 1791625980 ./mid/T5/server.log.2026-10-10-09-52
+203708 1 396 1791626006 ./mid/T5/server.log
+203698 1 495 1791625921 ./mid/T6/server.log.2026-10-10-09-51
+203704 1 864 1791625982 ./mid/T6/server.log.2026-10-10-09-52
+203712 1 360 1791626006 ./mid/T6/server.log
+203684 1 531 1791625920 ./mid/T3/server.log.2026-10-10-09-51
+203702 1 864 1791625980 ./mid/T3/server.log.2026-10-10-09-52
+203709 1 396 1791626005 ./mid/T3/server.log
+203692 1 495 1791625920 ./mid/T4/server.log.2026-10-10-09-51
+203701 1 900 1791625982 ./mid/T4/server.log.2026-10-10-09-52
+203713 1 360 1791626005 ./mid/T4/server.log
+203707 1 2987 1791626005 ./tracelog
+203661 1 4474 1791625920 ./trace.log.2026-10-10-09-51

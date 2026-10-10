@@ -1,0 +1,34 @@
+# snapshot 2026-10-10 18:57:25
+## T1
+VERDICT=STALE host=task-1 pid=21 fd=6 fd_inode=- cur_inode=203705 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T2
+VERDICT=STALE host=task-2 pid=21 fd=6 fd_inode=- cur_inode=203705 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T3
+VERDICT=STALE host=task-3 pid=22 fd=6 fd_inode=- cur_inode=203705 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T4
+VERDICT=STALE host=task-4 pid=21 fd=6 fd_inode=- cur_inode=203705 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T5
+VERDICT=CURRENT host=task-5 pid=21 fd=6 fd_inode=203705 cur_inode=203705 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T6
+VERDICT=STALE host=task-6 pid=22 fd=6 fd_inode=- cur_inode=203705 nlink=- name=/mnt/logs/front/logs/inter-api/tracelog
+# 注意: /mnt/logs/front/logs/inter-api は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## SERVER
+203661 1 4503 1791626220 ./trace.log.2026-10-10-09-56
+203668 1 531 1791626221 ./mid/T1/server.log.2026-10-10-09-56
+203709 1 324 1791626243 ./mid/T1/server.log
+203676 1 531 1791626220 ./mid/T2/server.log.2026-10-10-09-56
+203707 1 324 1791626243 ./mid/T2/server.log
+203695 1 531 1791626222 ./mid/T5/server.log.2026-10-10-09-56
+203711 1 324 1791626244 ./mid/T5/server.log
+203698 1 495 1791626220 ./mid/T6/server.log.2026-10-10-09-56
+203708 1 324 1791626244 ./mid/T6/server.log
+203684 1 531 1791626220 ./mid/T3/server.log.2026-10-10-09-56
+203706 1 360 1791626243 ./mid/T3/server.log
+203692 1 531 1791626222 ./mid/T4/server.log.2026-10-10-09-56
+203710 1 360 1791626244 ./mid/T4/server.log
+203705 1 2813 1791626244 ./tracelog

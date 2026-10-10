@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  いまの構成の再現（Log4j 2.25.3）。A4 はユーザーの設定そのまま。違いは filePattern の最小単位だけ:
+    本番: trace.log.%d{yyyy-MM-dd-HH}     → 1 時間ごとにロールオーバ
+    検証: trace.log.%d{yyyy-MM-dd-HH-mm}  → 1 分ごと（仕組みは同じ。時間を縮めただけ）
+  レイアウトは書いていない（ユーザーの設定と同じ）→ 既定の %m%n。
+  SERVER は JBoss の server.log の代わり。ユーザーの構成と同じく、共有ディレクトリの下の mid/{タスク} に書く（ロールオーバも同じ 1 分）。
+-->
+<Configuration>
+  <Appenders>
+    <RollingFile name="A4" fileName="${sys:iwin.log}/tracelog" filePattern="${sys:iwin.log}/trace.log.%d{yyyy-MM-dd-HH-mm}">
+      <Policies>
+        <TimeBasedTriggeringPolicy />
+      </Policies>
+    </RollingFile>
+    <RollingFile name="SERVER" fileName="/mnt/logs/front/logs/inter-api/mid/${env:TASK_NAME}/server.log"
+                 filePattern="/mnt/logs/front/logs/inter-api/mid/${env:TASK_NAME}/server.log.%d{yyyy-MM-dd-HH-mm}">
+      <Policies>
+        <TimeBasedTriggeringPolicy />
+      </Policies>
+    </RollingFile>
+  </Appenders>
+  <Loggers>
+    <Logger name="jp.iwin.base.tango.ILGLog4j.trace" level="debug" additivity="false">
+      <AppenderRef ref="A4"/>
+    </Logger>
+    <Logger name="server" level="info" additivity="false">
+      <AppenderRef ref="SERVER"/>
+    </Logger>
+    <Root level="error"/>
+  </Loggers>
+</Configuration>

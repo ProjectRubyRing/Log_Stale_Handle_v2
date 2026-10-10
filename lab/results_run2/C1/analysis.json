@@ -1,0 +1,761 @@
+{
+ "meta": {
+  "id": "C1",
+  "nfs": "3",
+  "tasks": "6",
+  "duration": "250",
+  "start_epoch": "1791624981",
+  "desc": "いまの構成（6 タスクが同じ tracelog）",
+  "end_epoch": "1791625241"
+ },
+ "tasks": [
+  "T1",
+  "T2",
+  "T3",
+  "T4",
+  "T5",
+  "T6"
+ ],
+ "totals": {
+  "emitted": 5998,
+  "lost": 4902,
+  "ok": 856,
+  "misplaced": 240
+ },
+ "per_task": {
+  "T1": {
+   "emitted": 1001,
+   "lost": 1001
+  },
+  "T2": {
+   "emitted": 997,
+   "lost": 754,
+   "ok": 243
+  },
+  "T3": {
+   "emitted": 1007,
+   "lost": 1007
+  },
+  "T4": {
+   "emitted": 1003,
+   "lost": 1003
+  },
+  "T5": {
+   "emitted": 998,
+   "lost": 758,
+   "misplaced": 240
+  },
+  "T6": {
+   "emitted": 992,
+   "lost": 379,
+   "ok": 613
+  }
+ },
+ "per_minute": {
+  "2026-10-10-09-36": {
+   "T1": {
+    "emitted": 150,
+    "lost": 150
+   },
+   "T2": {
+    "emitted": 153,
+    "lost": 153
+   },
+   "T3": {
+    "emitted": 157,
+    "lost": 157
+   },
+   "T4": {
+    "emitted": 148,
+    "lost": 148
+   },
+   "T5": {
+    "emitted": 149,
+    "lost": 149
+   },
+   "T6": {
+    "emitted": 143,
+    "lost": 143
+   }
+  },
+  "2026-10-10-09-37": {
+   "T1": {
+    "emitted": 242,
+    "lost": 242
+   },
+   "T2": {
+    "emitted": 238,
+    "lost": 238
+   },
+   "T3": {
+    "emitted": 241,
+    "lost": 241
+   },
+   "T4": {
+    "emitted": 241,
+    "lost": 241
+   },
+   "T5": {
+    "emitted": 240,
+    "misplaced": 240
+   },
+   "T6": {
+    "emitted": 239,
+    "ok": 239
+   }
+  },
+  "2026-10-10-09-38": {
+   "T1": {
+    "emitted": 242,
+    "lost": 242
+   },
+   "T2": {
+    "emitted": 243,
+    "ok": 243
+   },
+   "T3": {
+    "emitted": 247,
+    "lost": 247
+   },
+   "T4": {
+    "emitted": 238,
+    "lost": 238
+   },
+   "T5": {
+    "emitted": 241,
+    "lost": 241
+   },
+   "T6": {
+    "emitted": 236,
+    "lost": 236
+   }
+  },
+  "2026-10-10-09-39": {
+   "T1": {
+    "emitted": 238,
+    "lost": 238
+   },
+   "T2": {
+    "emitted": 235,
+    "lost": 235
+   },
+   "T3": {
+    "emitted": 232,
+    "lost": 232
+   },
+   "T4": {
+    "emitted": 242,
+    "lost": 242
+   },
+   "T5": {
+    "emitted": 234,
+    "lost": 234
+   },
+   "T6": {
+    "emitted": 241,
+    "ok": 241
+   }
+  },
+  "2026-10-10-09-40": {
+   "T1": {
+    "emitted": 129,
+    "lost": 129
+   },
+   "T2": {
+    "emitted": 128,
+    "lost": 128
+   },
+   "T3": {
+    "emitted": 130,
+    "lost": 130
+   },
+   "T4": {
+    "emitted": 134,
+    "lost": 134
+   },
+   "T5": {
+    "emitted": 134,
+    "lost": 134
+   },
+   "T6": {
+    "emitted": 133,
+    "ok": 133
+   }
+  }
+ },
+ "server_log": {
+  "T1": {
+   "expected": 100,
+   "found": 100
+  },
+  "T2": {
+   "expected": 99,
+   "found": 99
+  },
+  "T3": {
+   "expected": 100,
+   "found": 100
+  },
+  "T4": {
+   "expected": 100,
+   "found": 100
+  },
+  "T5": {
+   "expected": 99,
+   "found": 99
+  },
+  "T6": {
+   "expected": 99,
+   "found": 99
+  }
+ },
+ "files": {
+  "logs/trace.log.2026-10-10-09-36": {
+   "tasks": {
+    "T5": 240
+   },
+   "minutes": {
+    "2026-10-10-09-37": 240
+   },
+   "size": 6960,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/trace.log.2026-10-10-09-37": {
+   "tasks": {
+    "T6": 239
+   },
+   "minutes": {
+    "2026-10-10-09-37": 239
+   },
+   "size": 6931,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/trace.log.2026-10-10-09-38": {
+   "tasks": {
+    "T2": 243
+   },
+   "minutes": {
+    "2026-10-10-09-38": 243
+   },
+   "size": 7047,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/trace.log.2026-10-10-09-39": {
+   "tasks": {
+    "T6": 241
+   },
+   "minutes": {
+    "2026-10-10-09-39": 241
+   },
+   "size": 6989,
+   "nul": 0,
+   "broken": 0
+  },
+  "logs/tracelog": {
+   "tasks": {
+    "T6": 133
+   },
+   "minutes": {
+    "2026-10-10-09-40": 133
+   },
+   "size": 3857,
+   "nul": 0,
+   "broken": 0
+  }
+ },
+ "broken_lines": {},
+ "nul_bytes": {},
+ "boundaries": [
+  {
+   "boundary_utc": "09:37:00",
+   "order": [
+    "T5",
+    "T2",
+    "T4",
+    "T3",
+    "T1",
+    "T6"
+   ],
+   "offset_ms": [
+    7,
+    96,
+    102,
+    151,
+    194,
+    274
+   ],
+   "predicted": {
+    "T5": "STALE",
+    "T2": "STALE",
+    "T4": "STALE",
+    "T3": "STALE",
+    "T1": "ARCHIVE",
+    "T6": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "09:38:00",
+   "order": [
+    "T4",
+    "T5",
+    "T6",
+    "T1",
+    "T3",
+    "T2"
+   ],
+   "offset_ms": [
+    16,
+    75,
+    76,
+    128,
+    131,
+    241
+   ],
+   "predicted": {
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE",
+    "T1": "STALE",
+    "T3": "ARCHIVE",
+    "T2": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "09:39:00",
+   "order": [
+    "T3",
+    "T1",
+    "T2",
+    "T5",
+    "T4",
+    "T6"
+   ],
+   "offset_ms": [
+    68,
+    78,
+    110,
+    223,
+    241,
+    316
+   ],
+   "predicted": {
+    "T3": "STALE",
+    "T1": "STALE",
+    "T2": "STALE",
+    "T5": "STALE",
+    "T4": "ARCHIVE",
+    "T6": "CURRENT"
+   },
+   "after_recreate": false
+  },
+  {
+   "boundary_utc": "09:40:00",
+   "order": [
+    "T1",
+    "T4",
+    "T5",
+    "T2",
+    "T3",
+    "T6"
+   ],
+   "offset_ms": [
+    14,
+    32,
+    141,
+    151,
+    164,
+    308
+   ],
+   "predicted": {
+    "T1": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T2": "STALE",
+    "T3": "ARCHIVE",
+    "T6": "CURRENT"
+   },
+   "after_recreate": false
+  }
+ ],
+ "snapshots": [
+  {
+   "file": "snap-183726.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "CURRENT",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "ARCHIVE",
+    "T6": "CURRENT"
+   },
+   "agree": 5,
+   "of": 6,
+   "count": {
+    "STALE": 4,
+    "CURRENT": 2
+   },
+   "match": {
+    "boundary_utc": "09:37:00",
+    "agree": 4,
+    "of": 6
+   },
+   "server": {
+    "203589": {
+     "nlink": "1",
+     "size": "2813",
+     "mtime": "1791625045",
+     "name": "tracelog"
+    },
+    "203618": {
+     "nlink": "1",
+     "size": "2842",
+     "mtime": "1791625044",
+     "name": "trace.log.2026-10-10-09-36"
+    }
+   }
+  },
+  {
+   "file": "snap-183825.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "CURRENT",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "CURRENT",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "STALE"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "STALE": 5,
+    "CURRENT": 1
+   },
+   "match": {
+    "boundary_utc": "09:38:00",
+    "agree": 5,
+    "of": 6
+   },
+   "server": {
+    "203627": {
+     "nlink": "1",
+     "size": "2900",
+     "mtime": "1791625105",
+     "name": "tracelog"
+    },
+    "203618": {
+     "nlink": "1",
+     "size": "6960",
+     "mtime": "1791625080",
+     "name": "trace.log.2026-10-10-09-36"
+    },
+    "203589": {
+     "nlink": "1",
+     "size": "6931",
+     "mtime": "1791625080",
+     "name": "trace.log.2026-10-10-09-37"
+    }
+   }
+  },
+  {
+   "file": "snap-183925.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "CURRENT"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "STALE": 5,
+    "CURRENT": 1
+   },
+   "match": {
+    "boundary_utc": "09:39:00",
+    "agree": 5,
+    "of": 6
+   },
+   "server": {
+    "203627": {
+     "nlink": "1",
+     "size": "7047",
+     "mtime": "1791625140",
+     "name": "trace.log.2026-10-10-09-38"
+    },
+    "203632": {
+     "nlink": "1",
+     "size": "1392",
+     "mtime": "1791625152",
+     "name": "tracelog"
+    },
+    "203618": {
+     "nlink": "1",
+     "size": "6960",
+     "mtime": "1791625080",
+     "name": "trace.log.2026-10-10-09-36"
+    },
+    "203589": {
+     "nlink": "1",
+     "size": "6931",
+     "mtime": "1791625080",
+     "name": "trace.log.2026-10-10-09-37"
+    }
+   }
+  },
+  {
+   "file": "snap-184025.txt",
+   "verdicts": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "CURRENT"
+   },
+   "truth": {
+    "T1": "STALE",
+    "T2": "STALE",
+    "T3": "STALE",
+    "T4": "STALE",
+    "T5": "STALE",
+    "T6": "CURRENT"
+   },
+   "agree": 6,
+   "of": 6,
+   "count": {
+    "STALE": 5,
+    "CURRENT": 1
+   },
+   "match": {
+    "boundary_utc": "09:40:00",
+    "agree": 5,
+    "of": 6
+   },
+   "server": {
+    "203627": {
+     "nlink": "1",
+     "size": "7047",
+     "mtime": "1791625140",
+     "name": "trace.log.2026-10-10-09-38"
+    },
+    "203632": {
+     "nlink": "1",
+     "size": "6989",
+     "mtime": "1791625200",
+     "name": "trace.log.2026-10-10-09-39"
+    },
+    "203639": {
+     "nlink": "1",
+     "size": "1508",
+     "mtime": "1791625213",
+     "name": "tracelog"
+    },
+    "203618": {
+     "nlink": "1",
+     "size": "6960",
+     "mtime": "1791625080",
+     "name": "trace.log.2026-10-10-09-36"
+    },
+    "203589": {
+     "nlink": "1",
+     "size": "6931",
+     "mtime": "1791625080",
+     "name": "trace.log.2026-10-10-09-37"
+    }
+   }
+  }
+ ],
+ "stderr": {
+  "T1": {
+   "stale": 14,
+   "close_err": 5,
+   "write_err_trace": 2
+  },
+  "T2": {
+   "write_err_trace": 2,
+   "stale": 10,
+   "close_err": 3
+  },
+  "T3": {
+   "stale": 14,
+   "close_err": 5,
+   "write_err_trace": 2
+  },
+  "T4": {
+   "write_err_trace": 2,
+   "stale": 12,
+   "close_err": 4
+  },
+  "T5": {
+   "write_err_trace": 2,
+   "stale": 10,
+   "close_err": 3
+  },
+  "T6": {
+   "stale": 8,
+   "close_err": 2,
+   "write_err_trace": 2
+  }
+ },
+ "stderr_samples": {
+  "T1": [
+   "2026-10-10T09:37:00.199597462Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle",
+   "2026-10-10T09:37:03.439879295Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:37:03.672765100Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:00.130279159Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle"
+  ],
+  "T2": [
+   "2026-10-10T09:37:03.488435969Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:37:03.871918970Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:00.245708029Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle",
+   "2026-10-10T09:40:00.154258204Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle"
+  ],
+  "T3": [
+   "2026-10-10T09:37:00.156364002Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle",
+   "2026-10-10T09:37:03.496630239Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:37:03.646349887Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:00.133288782Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle"
+  ],
+  "T4": [
+   "2026-10-10T09:37:03.135567954Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:37:03.524471568Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:00.025227120Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle",
+   "2026-10-10T09:39:00.244291741Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle"
+  ],
+  "T5": [
+   "2026-10-10T09:38:03.231320873Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:03.420046630Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:39:00.228193759Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle",
+   "2026-10-10T09:40:00.143488012Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle"
+  ],
+  "T6": [
+   "2026-10-10T09:37:00.279628241Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:03.344473421Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:38:03.664976522Z main ERROR Unable to write to stream /webapp/webapp9mf02/logs/tracelog for appender A4",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "org.apache.logging.log4j.core.appender.AppenderLoggingException: Error writing to stream /webapp/webapp9mf02/logs/tracelog",
+   "Caused by: java.io.IOException: Stale file handle",
+   "2026-10-10T09:39:00.319756811Z main ERROR RollingFileManager /webapp/webapp9mf02/logs/tracelog Unable to close stream: java.io.IOException: Stale file handle"
+  ]
+ },
+ "last_minute": "2026-10-10-09-40",
+ "fates": {
+  "2026-10-10-09-36": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  },
+  "2026-10-10-09-37": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "ARCHIVE",
+   "T6": "CURRENT"
+  },
+  "2026-10-10-09-38": {
+   "T1": "STALE",
+   "T2": "CURRENT",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "STALE"
+  },
+  "2026-10-10-09-39": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "CURRENT"
+  },
+  "2026-10-10-09-40": {
+   "T1": "STALE",
+   "T2": "STALE",
+   "T3": "STALE",
+   "T4": "STALE",
+   "T5": "STALE",
+   "T6": "CURRENT"
+  }
+ },
+ "post_recreate": null
+}

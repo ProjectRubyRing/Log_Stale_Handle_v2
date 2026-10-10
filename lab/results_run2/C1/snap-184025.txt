@@ -1,0 +1,25 @@
+# snapshot 2026-10-10 18:40:25
+## T1
+VERDICT=STALE host=task-1 pid=20 fd=6 fd_inode=- cur_inode=203639 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+# 注意: /mnt/logs/front/inter-api/logs は 25 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T2
+VERDICT=STALE host=task-2 pid=21 fd=6 fd_inode=- cur_inode=203639 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+# 注意: /mnt/logs/front/inter-api/logs は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T3
+VERDICT=STALE host=task-3 pid=21 fd=6 fd_inode=- cur_inode=203639 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+# 注意: /mnt/logs/front/inter-api/logs は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T4
+VERDICT=STALE host=task-4 pid=22 fd=6 fd_inode=- cur_inode=203639 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+# 注意: /mnt/logs/front/inter-api/logs は 26 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T5
+VERDICT=STALE host=task-5 pid=20 fd=6 fd_inode=- cur_inode=203639 nlink=- name=/mnt/logs/front/inter-api/logs/tracelog
+# 注意: /mnt/logs/front/inter-api/logs は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## T6
+VERDICT=CURRENT host=task-6 pid=22 fd=6 fd_inode=203639 cur_inode=203639 nlink=1 name=tracelog
+# 注意: /mnt/logs/front/inter-api/logs は 27 秒前に変わったばかり（ロールオーバの直後）。1〜2 分あけてもう一度実行し、同じ結果か確かめる
+## SERVER
+203627 1 7047 1791625140 ./trace.log.2026-10-10-09-38
+203632 1 6989 1791625200 ./trace.log.2026-10-10-09-39
+203639 1 1508 1791625213 ./tracelog
+203618 1 6960 1791625080 ./trace.log.2026-10-10-09-36
+203589 1 6931 1791625080 ./trace.log.2026-10-10-09-37
